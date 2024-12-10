@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants>
+	</grants>
+	<actions>
+		<!-- 관리자 액션 -->
+		<action name="dispQuerynextAdminConfig" class="Controllers\Admin" menu-name="querynext" admin-index="true" />
+		<action name="procQuerynextAdminInsertConfig" class="Controllers\Admin" />
+	</actions>
+	<!-- 이벤트 핸들러 (트리거) 선언 -->
+	<eventHandlers>
+	</eventHandlers>
+	<menus>
+		<menu name="querynext" type="all">
+			<title xml:lang="ko">QueryNext</title>
+		</menu>
+	</menus>
+</module>

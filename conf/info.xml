@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">QueryNext</title>
+	<description xml:lang="ko">JPA를 사용할 수 있도록하는 모듈입니다</description>
+	<version>1.0.0</version>
+	<date>2024-12-10</date>
+	<category>service</category>
+	<author email_address="waterticket@potatosoft.kr" link="https://potatosoft.kr">
+		<name xml:lang="ko">Waterticket</name>
+	</author>
+</module>
