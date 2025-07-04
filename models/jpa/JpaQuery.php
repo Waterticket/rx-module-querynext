@@ -11,8 +11,8 @@ class JpaQuery {
     private $query_dto_name; // DTO variable name in query
     private $query_dto_name_underscore; // DTO variable name in query with underscore
     private $select_fields = []; // [['field_name'=>'age', 'keyword'=>'between', 'pipe'=>'and',], ...]
-    private $is_list = false;
-    private $is_pageable = false;
+    protected $is_list = false;
+    protected $is_pageable = false;
     private $is_order_by = false;
     private $order_by_target = '';
     private $order_by_direction = 'asc';
@@ -77,7 +77,7 @@ class JpaQuery {
         $this->parseSelectFields($method_parts);
     }
 
-    private function parseMethodDtoName(array $method_parts): int {
+    protected function parseMethodDtoName(array $method_parts): int {
         $dto_name_array = [];
         $dto_name_idx = 0;
         foreach ($method_parts as $idx => $part) {

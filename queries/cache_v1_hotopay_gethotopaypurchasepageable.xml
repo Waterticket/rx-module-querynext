@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<query id="cache_v1_hotopay_gethotopaypurchasepageable" action="SELECT">
+  <tables>
+    <table name="hotopay_purchase"/>
+  </tables>
+  <columns>
+    <column name="*"/>
+  </columns>
+  <conditions>
+    <condition operation="equal" column="hotopay_purchase_pageable" var="hotopay_purchase_pageable" pipe=""/>
+  </conditions>
+  <navigation>
+    <index var="sort_index" default="" order="order_type"/>
+    <list_count var="list_count" default="20"/>
+    <page_count var="page_count" default="10"/>
+    <page var="page" default="1"/>
+  </navigation>
+</query>

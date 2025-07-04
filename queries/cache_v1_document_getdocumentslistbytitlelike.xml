@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<query id="cache_v1_document_getdocumentslistbytitlelike" action="SELECT">
+  <tables>
+    <table name="documents"/>
+  </tables>
+  <columns>
+    <column name="*"/>
+  </columns>
+  <conditions>
+    <condition operation="like" column="title" var="title" pipe=""/>
+  </conditions>
+  <navigation/>
+</query>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<query id="cache_v1_document_getdocumentslist" action="SELECT">
+  <tables>
+    <table name="documents"/>
+  </tables>
+  <columns>
+    <column name="*"/>
+  </columns>
+  <conditions>
+    <condition operation="equal" column="documents_list" var="documents_list" pipe=""/>
+  </conditions>
+  <navigation/>
+</query>

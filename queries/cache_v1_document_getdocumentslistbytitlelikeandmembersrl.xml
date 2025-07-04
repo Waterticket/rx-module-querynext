@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<query id="cache_v1_document_getdocumentslistbytitlelikeandmembersrl" action="SELECT">
+  <tables>
+    <table name="documents"/>
+  </tables>
+  <columns>
+    <column name="*"/>
+  </columns>
+  <conditions>
+    <condition operation="like" column="title" var="title" pipe=""/>
+    <condition operation="equal" column="member_srl" var="member_srl" pipe="and"/>
+  </conditions>
+  <navigation/>
+</query>

@@ -9,6 +9,7 @@
 	</actions>
 	<!-- 이벤트 핸들러 (트리거) 선언 -->
 	<eventHandlers>
+		<eventHandler after="moduleHandler.init" class="Controllers\EventHandlers" method="repositoryAutoloaderInitialize" />
 	</eventHandlers>
 	<menus>
 		<menu name="querynext" type="all">
